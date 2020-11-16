@@ -16,7 +16,7 @@ public class AuthActivity extends AppCompatActivity {
     Drawable logo;
 
     @Inject
-    RequestManager requestManager;
+    RequestManager requestManagerl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class AuthActivity extends AppCompatActivity {
 
 
     private void setLogo(){
-        requestManager
+        requestManagerl
                 .load(logo)
                 .into((ImageView) findViewById(R.id.login_logo));
     }
